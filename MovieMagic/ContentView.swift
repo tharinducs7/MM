@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct ContentView: View {
     
     var body: some View {
         TabBarComponent()
+            .ignoresSafeArea(.keyboard)
     }
 }
 

@@ -12,20 +12,26 @@ struct ReviewComponent: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
+            Text(review.reviewTitle)
+                .font(.title2)
+                .fontDesign(.rounded)
             HStack(spacing: 10) {
+                MovieRating(rating: review.rating)
+                
+                Spacer()
+                
                 VStack(alignment: .leading, spacing: 4) {
                     Text(review.userName)
-                        .font(.headline)
-                    Text(hideEmail(review.email))
-                        .font(.subheadline)
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                        .fontDesign(.rounded)
                 }
-                Spacer()
-                MovieRating(rating: review.rating)
             }
+
             Text(review.review)
-                .padding(.horizontal)
+                .font(.footnote)
         }
-        .padding()
+        .padding(20)
     }
     
     private func hideEmail(_ email: String) -> String {
@@ -38,6 +44,6 @@ struct ReviewComponent: View {
 
 struct ReviewComponent_Previews: PreviewProvider {
     static var previews: some View {
-        ReviewComponent(review: MovieReview(movieID: "123", userName: "John Doe", email: "johndoe@example.com", rating: 4, review: "This is a great movie. I highly recommend it!"))
+        ReviewComponent(review: MovieReview(id: 1, userName: "John Doe", email: "johndoe@example.com", rating: 4, review: "This is a great movie. I highly recommend it!", reviewTitle: "Nice Movie"))
     }
 }

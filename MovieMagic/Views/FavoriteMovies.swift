@@ -34,8 +34,6 @@ struct FavoriteMovies: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.horizontal, 15)
             
-//            GenreTag(movies: sampleMovies)
-            
             GeometryReader {
                 let size = $0.size
                 
@@ -59,7 +57,7 @@ struct FavoriteMovies: View {
                     }
                     .padding(.horizontal, 15)
                     .padding(.vertical, 20)
-                    //.padding(.bottom, bottomPadding(size))
+
                 }
                 .coordinateSpace(name: "LISTVIEW")
                 .padding(.top, 15)
@@ -68,8 +66,7 @@ struct FavoriteMovies: View {
         .overlay(content: {
             if let selectedMovie, showDetailView {
                 MovieDetails(show:$showDetailView, animation: animation, movie: selectedMovie)
-                // for more fluent animation
-                    .transition(.asymmetric(insertion: .identity, removal: .offset(y: 5)))
+                .transition(.asymmetric(insertion: .identity, removal: .offset(y: 5)))
             }
         })
     }
@@ -85,5 +82,18 @@ struct FavoriteMovies: View {
 struct FavoriteMovies_Previews: PreviewProvider {
     static var previews: some View {
         FavoriteMovies(movies: sampleMovies)
+    }
+}
+
+
+struct InfiniteStackView: View {
+    @Binding var movies: [Movie]
+    var movie: Movie
+    
+    var body: some View {
+        VStack {
+            MovieCardTypeB(movie: movie)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }

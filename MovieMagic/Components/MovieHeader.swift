@@ -15,11 +15,6 @@ struct MovieHeader: View {
             let size = $0.size
             
             HStack(spacing: 20) {
-                MoviePoster(posterURL: movie.poster)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: size.width / 2.4, height: size.height)
-                    .clipShape(CustomCorners(corners: [.topRight, .bottomRight], radius: 280))
-
                 VStack(alignment: .leading, spacing: 8) {
                     Text(movie.title)
                         .font(.title2)
@@ -32,16 +27,23 @@ struct MovieHeader: View {
                     
                     MovieRating(rating: 5)
                 }
-                .padding(.trailing, 15)
+                .padding(.leading, 15)
+                
+                MoviePoster(posterURL: movie.poster)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: size.width / 4, height: size.height)
+                    .clipShape(CustomCorners(corners: [.topRight, .bottomRight], radius: 280))
+                   // .padding(.top, -60)
             }
         }
-        .frame(height: 300)
+        .frame(height: 100)
         .zIndex(1)
     }
 }
 
 struct MovieHeader_Previews: PreviewProvider {
     static var previews: some View {
-        MovieHeader(movie: sampleMovies[0])
+      //  MovieHeader(movie: sampleMovies[0])
+        AddReview(movie: sampleMovies[0])
     }
 }

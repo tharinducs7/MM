@@ -85,7 +85,7 @@ struct MovieCardTypeA: View {
 
 struct MovieCardTypeA_Previews: PreviewProvider {
     static var previews: some View {
-      //  MovieCardTypeA(movie: sampleMovies[0])
+       // MovieCardTypeA(movie: sampleMovies[0])
         
         SearchList()
     }

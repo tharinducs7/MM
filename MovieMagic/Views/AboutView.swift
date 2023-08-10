@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AboutView: View {
-    @State private var user: User = User(id:1, name: "John Doe", email: "johndoe@example.com")
+    @State private var user: User = User(id: UUID(), name: "John Doe", email: "johndoe@example.com", favoriteGenres: ["Action", "Drama"])
     
     var body: some View {
         VStack {

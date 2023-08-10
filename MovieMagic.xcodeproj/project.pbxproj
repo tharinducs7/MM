@@ -26,6 +26,16 @@
 		C126A58A2A80940000F28F20 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126A5892A80940000F28F20 /* Constants.swift */; };
 		C126A58C2A80995600F28F20 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126A58B2A80995600F28F20 /* Genre.swift */; };
 		C126A58E2A809C1400F28F20 /* GenreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126A58D2A809C1400F28F20 /* GenreViewModel.swift */; };
+		C126A5902A80A5EC00F28F20 /* StarRatingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126A58F2A80A5EC00F28F20 /* StarRatingComponent.swift */; };
+		C126A5922A80AC4600F28F20 /* CustomLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126A5912A80AC4600F28F20 /* CustomLable.swift */; };
+		C126A5962A811F0F00F28F20 /* MovieCardTypeB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126A5952A811F0F00F28F20 /* MovieCardTypeB.swift */; };
+		C126A5982A81284800F28F20 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126A5972A81284800F28F20 /* SearchBar.swift */; };
+		C126A59B2A812D6F00F28F20 /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126A59A2A812D6F00F28F20 /* HideKeyboard.swift */; };
+		C126A59D2A813DF100F28F20 /* TrendingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126A59C2A813DF100F28F20 /* TrendingList.swift */; };
+		C126A5BB2A83E4E200F28F20 /* Theater.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126A5BA2A83E4E200F28F20 /* Theater.swift */; };
+		C126A5BE2A83E78F00F28F20 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126A5BD2A83E78F00F28F20 /* LocationManager.swift */; };
+		C126A5C02A83E84D00F28F20 /* MovieTheater.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126A5BF2A83E84D00F28F20 /* MovieTheater.swift */; };
+		C126A5C22A83F5CD00F28F20 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126A5C12A83F5CD00F28F20 /* LocationViewModel.swift */; };
 		C173CA092A7DD32A00549B32 /* MovieMagicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173CA082A7DD32A00549B32 /* MovieMagicApp.swift */; };
 		C173CA0B2A7DD32A00549B32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173CA0A2A7DD32A00549B32 /* ContentView.swift */; };
 		C173CA0D2A7DD32C00549B32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C173CA0C2A7DD32C00549B32 /* Assets.xcassets */; };
@@ -94,6 +104,17 @@
 		C126A5892A80940000F28F20 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C126A58B2A80995600F28F20 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		C126A58D2A809C1400F28F20 /* GenreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreViewModel.swift; sourceTree = "<group>"; };
+		C126A58F2A80A5EC00F28F20 /* StarRatingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingComponent.swift; sourceTree = "<group>"; };
+		C126A5912A80AC4600F28F20 /* CustomLable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLable.swift; sourceTree = "<group>"; };
+		C126A5952A811F0F00F28F20 /* MovieCardTypeB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardTypeB.swift; sourceTree = "<group>"; };
+		C126A5972A81284800F28F20 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		C126A59A2A812D6F00F28F20 /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
+		C126A59C2A813DF100F28F20 /* TrendingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingList.swift; sourceTree = "<group>"; };
+		C126A5BA2A83E4E200F28F20 /* Theater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theater.swift; sourceTree = "<group>"; };
+		C126A5BD2A83E78F00F28F20 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C126A5BF2A83E84D00F28F20 /* MovieTheater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTheater.swift; sourceTree = "<group>"; };
+		C126A5C12A83F5CD00F28F20 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		C126A5C32A83F7B300F28F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C173CA052A7DD32A00549B32 /* MovieMagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieMagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C173CA082A7DD32A00549B32 /* MovieMagicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMagicApp.swift; sourceTree = "<group>"; };
 		C173CA0A2A7DD32A00549B32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -144,6 +165,7 @@
 			children = (
 				C126A5832A7FC9F900F28F20 /* MoviesViewModel.swift */,
 				C126A58D2A809C1400F28F20 /* GenreViewModel.swift */,
+				C126A5C12A83F5CD00F28F20 /* LocationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -162,6 +184,22 @@
 				C126A5892A80940000F28F20 /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		C126A5992A812D5C00F28F20 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				C126A59A2A812D6F00F28F20 /* HideKeyboard.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		C126A5BC2A83E77D00F28F20 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				C126A5BD2A83E78F00F28F20 /* LocationManager.swift */,
+			);
+			path = LocationManager;
 			sourceTree = "<group>";
 		};
 		C173C9FC2A7DD32A00549B32 = {
@@ -187,6 +225,9 @@
 		C173CA072A7DD32A00549B32 /* MovieMagic */ = {
 			isa = PBXGroup;
 			children = (
+				C126A5C32A83F7B300F28F20 /* Info.plist */,
+				C126A5BC2A83E77D00F28F20 /* LocationManager */,
+				C126A5992A812D5C00F28F20 /* Extentions */,
 				C126A5882A8093EB00F28F20 /* Constants */,
 				C126A5852A8019BF00F28F20 /* DataManager */,
 				C126A5802A7FC59400F28F20 /* ViewModels */,
@@ -238,6 +279,7 @@
 				C126A5702A7F869E00F28F20 /* Home.swift */,
 				C126A57A2A7F965400F28F20 /* AboutView.swift */,
 				C126A57E2A7FA94800F28F20 /* SplashScreen.swift */,
+				C126A5BF2A83E84D00F28F20 /* MovieTheater.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,6 +294,11 @@
 				C126A5642A7F79D400F28F20 /* MovieHeader.swift */,
 				C126A56A2A7F7F1400F28F20 /* ReviewComponent.swift */,
 				C126A57C2A7FA69700F28F20 /* TabBarComponent.swift */,
+				C126A58F2A80A5EC00F28F20 /* StarRatingComponent.swift */,
+				C126A5912A80AC4600F28F20 /* CustomLable.swift */,
+				C126A5952A811F0F00F28F20 /* MovieCardTypeB.swift */,
+				C126A5972A81284800F28F20 /* SearchBar.swift */,
+				C126A59C2A813DF100F28F20 /* TrendingList.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -264,6 +311,7 @@
 				C126A56E2A7F84FC00F28F20 /* Tab.swift */,
 				C126A5782A7F961600F28F20 /* User.swift */,
 				C126A58B2A80995600F28F20 /* Genre.swift */,
+				C126A5BA2A83E4E200F28F20 /* Theater.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -415,27 +463,37 @@
 				C126A56D2A7F835400F28F20 /* FavoriteMovies.swift in Sources */,
 				C126A5712A7F869E00F28F20 /* Home.swift in Sources */,
 				C173CA482A7ED72100549B32 /* MovieRating.swift in Sources */,
+				C126A5BB2A83E4E200F28F20 /* Theater.swift in Sources */,
 				C173CA0B2A7DD32A00549B32 /* ContentView.swift in Sources */,
 				C126A57D2A7FA69700F28F20 /* TabBarComponent.swift in Sources */,
 				C173CA382A7EC08500549B32 /* SearchList.swift in Sources */,
+				C126A59B2A812D6F00F28F20 /* HideKeyboard.swift in Sources */,
 				C173CA092A7DD32A00549B32 /* MovieMagicApp.swift in Sources */,
 				C126A5872A8019CC00F28F20 /* DataManager.swift in Sources */,
+				C126A5C02A83E84D00F28F20 /* MovieTheater.swift in Sources */,
 				C126A5752A7F8D9D00F28F20 /* TabShape.swift in Sources */,
 				C126A58E2A809C1400F28F20 /* GenreViewModel.swift in Sources */,
 				C126A5792A7F961600F28F20 /* User.swift in Sources */,
+				C126A5982A81284800F28F20 /* SearchBar.swift in Sources */,
 				C126A5652A7F79D400F28F20 /* MovieHeader.swift in Sources */,
 				C126A5772A7F8FEB00F28F20 /* TabPositions.swift in Sources */,
 				C126A57B2A7F965400F28F20 /* AboutView.swift in Sources */,
+				C126A5C22A83F5CD00F28F20 /* LocationViewModel.swift in Sources */,
+				C126A59D2A813DF100F28F20 /* TrendingList.swift in Sources */,
 				C173CA442A7ED0F900549B32 /* MoviePoster.swift in Sources */,
 				C173CA402A7ECCCF00549B32 /* MovieCardTypeA.swift in Sources */,
 				C173CA362A7EBCDA00549B32 /* Movie.swift in Sources */,
 				C126A5692A7F7E4100F28F20 /* MoviewReview.swift in Sources */,
+				C126A5962A811F0F00F28F20 /* MovieCardTypeB.swift in Sources */,
 				C173CA4C2A7F4CF700549B32 /* MovieDetails.swift in Sources */,
 				C126A5632A7F743C00F28F20 /* AddReview.swift in Sources */,
+				C126A5902A80A5EC00F28F20 /* StarRatingComponent.swift in Sources */,
 				C126A58C2A80995600F28F20 /* Genre.swift in Sources */,
 				C173CA512A7F51C600549B32 /* CustomCorners.swift in Sources */,
 				C126A56B2A7F7F1400F28F20 /* ReviewComponent.swift in Sources */,
 				C126A5842A7FC9F900F28F20 /* MoviesViewModel.swift in Sources */,
+				C126A5922A80AC4600F28F20 /* CustomLable.swift in Sources */,
+				C126A5BE2A83E78F00F28F20 /* LocationManager.swift in Sources */,
 				C126A58A2A80940000F28F20 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,6 +669,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MovieMagic/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieMagic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -639,6 +698,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MovieMagic/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieMagic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

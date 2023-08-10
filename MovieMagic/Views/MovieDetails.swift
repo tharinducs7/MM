@@ -24,8 +24,8 @@ struct MovieDetails: View {
                 withAnimation(.easeInOut(duration: 0.2)) {
                     offsetAimation = false
                 }
-                withAnimation(.easeInOut(duration: 0.35).delay(0.1)) {
-                    //   animationContent = false
+                withAnimation(.easeInOut(duration: 0.3).delay(0.1)) {
+                    //animationContent = false
                     show = false
                 }
             } label: {
@@ -47,7 +47,7 @@ struct MovieDetails: View {
                     MoviePoster(posterURL: movie.poster)
                         .frame(width: size.width / 2, height: size.height)
                         .clipShape(CustomCorners(corners: [.topRight, .bottomRight], radius: 20))
-                        .matchedGeometryEffect(id: movie.title, in: animation)
+                        .matchedGeometryEffect(id: movie.id, in: animation)
 
                     VStack(alignment: .leading, spacing: 8) {
                         Text(movie.title)
@@ -163,9 +163,9 @@ struct MovieDetails: View {
                     .padding(.vertical, 10)
                     .background {
                         Capsule()
-                            .fill( Color("Purple Dark"))
+                            .fill(Color("Purple Dark"))
                     }
-                    .foregroundColor( Color("Gold Light"))
+                    .foregroundColor(Color("Gold Light"))
                     .fontDesign(.rounded)
             }
             .padding(.bottom, 15)

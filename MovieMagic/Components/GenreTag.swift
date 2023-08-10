@@ -17,16 +17,15 @@ struct GenreTag: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 10) {
-                let allGenres = movieVM.movies.flatMap { $0.genre.components(separatedBy: ", ") }
-                let uniqueGenres = Set(allGenres)
+
                 ForEach(genreVM.genres, id: \.id) { genre in
                     Text(genre.genre)
                         .font(.caption)
                         .padding(.horizontal, 12)
-                        .padding(.vertical, 6)
-                        .foregroundColor(activeTag == genre.genre ? .white : .black)
+                        .padding(.vertical, 10)
+                        .foregroundColor(activeTag == genre.key ? .white : .black)
                         .background{
-                            if activeTag == genre.genre {
+                            if activeTag == genre.key {
                                 Capsule()
                                     .fill(Color("Purple Dark"))
                                     .matchedGeometryEffect(id: "ACTIVETAG", in: animation)
@@ -39,11 +38,11 @@ struct GenreTag: View {
                         // Changing the active tag
                         .onTapGesture {
                             withAnimation(.interactiveSpring(response: 0.5, dampingFraction: 0.7, blendDuration: 0.7)) {
-                                activeTag = genre.genre
+                                activeTag = genre.key
                             }
                             
-                            movieVM.selectedGenre = genre.genre
-                            movieVM.filterMovies(by: genre.genre)
+                            movieVM.selectedGenre = genre.key
+                            movieVM.filterMovies(by: genre.key)
                         }
                 }
             }
@@ -52,8 +51,3 @@ struct GenreTag: View {
     }
 }
 
-//struct GenreTag_Previews: PreviewProvider {
-//    static var previews: some View {
-//        GenreTag(movies: sampleMovies, movieVM: MoviesViewModel)
-//    }
-//}

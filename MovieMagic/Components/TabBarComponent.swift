@@ -23,19 +23,27 @@ struct TabBarComponent: View {
             TabView(selection: $activeTab) {
                 Home()
                     .tag(Tab.home)
-                   // .toolbar(.hidden, for: .tabBar)
+                    .onTapGesture {
+                        self.hideKeyboard()
+                    }
                 
                 SearchList()
                     .tag(Tab.list)
-                   // .toolbar(.hidden, for: .tabBar)
+                    .onTapGesture {
+                        self.hideKeyboard()
+                    }
                 
                 FavoriteMovies(movies: sampleMovies)
                     .tag(Tab.savedMovies)
-                   // .toolbar(.hidden, for: .tabBar)
+                    .onTapGesture {
+                        self.hideKeyboard()
+                    }
                 
-                AboutView()
+                MovieTheater()
                     .tag(Tab.about)
-                   // .toolbar(.hidden, for: .tabBar)
+                    .onTapGesture {
+                        self.hideKeyboard()
+                    }
             }
             
             CustomTabBar()
